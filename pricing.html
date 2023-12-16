@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <nav class="flex justify-between p-4 border-2 shadowed-lg">
+        <a href="./index.html"><h1 class="pt-[4px] text-xl">Company Name</h1></a>
+        <div>
+          <span class="hover:underline cursor-pointer text-l px-2">Features</span>
+          <span class="hover:underline cursor-pointer text-l px-2"
+            >Enterprises</span
+          >
+          <span class="hover:underline cursor-pointer text-l px-2">Support</span>
+          <span class="hover:underline cursor-pointer text-l px-2">Pricing</span>
+          <button
+            class="text-blue-500 border-2 border-blue-500 rounded-lg p-2 hover:bg-blue-500 hover:text-white text-l "
+            
+          >
+            Sign Up
+          </button>
+        </div>
+      </nav>
+      
+      <div class="px-3 text-center flex justify-center mt-16" id="pricing">
+        <div class="h-[90px] w-1/2 text-center font-light">
+          <h1 class="display-4 text-6xl text-gray-900">Pricing</h1>
+          <p class="text-xl text-gray-800 px-8">
+            Quickly build an effective pricing table for your potential customers
+            with this Bootstrap example. It's built with default Bootstrap
+            components and utilities with little customization.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-2 justify-center text-center mt-8 px-56">
+        <input type="range" name="slider" id="slider" min="1" max="100" value="1"  class="slides">
+        <p>Select Number of Users :<span id="value"></span></p>
+    </div>
+      
+      <div class="flex  justify-center text-center">
+        
+        <div class="flex gap-4 justify-center w-3/4 mt-12">
+          <div
+            class="flex flex-col border-2 shadow-md bg-clip-border rounded-xl w-1/4 opacity-25 " id="card1" 
+          >
+            <h1 class="bg-gray-300 p-4 text-xl mb-2">Free</h1>
+            <span class="text-3xl mb-2"
+              >$0 <span class="text-gray-700">/month</span></span
+            >
+            <h2>10 users included</h2>
+            <h2>2 GB of storage</h2>
+            <h2>Email support</h2>
+            <h2 class="mb-2">Help center access</h2>
+            <a href="./form.html"><button disabled
+              class="text-blue-500 border-2 border-blue-500 rounded-lg p-2 hover:bg-blue-500 hover:text-white text-l m-4 " id="btn1"
+            >
+              Sign Up for Free
+            </button></a>
+          </div>
+
+          <div
+            class="flex flex-col border-2 shadow-md bg-clip-border rounded-xl w-1/4 opacity-25 " id="card2"
+          >
+            <h1 class="bg-gray-300 p-4 text-xl mb-2">Pro</h1>
+            <span class="text-3xl mb-2"
+              >$15 <span class="text-gray-700">/month</span></span
+            >
+            <h2>20 users included</h2>
+            <h2>10 GB of storage</h2>
+            <h2>Priority Email support</h2>
+            <h2 class="mb-2">Help center access</h2>
+            <a href="./form.html"><button disabled
+              class="border-2 rounded-lg p-2 bg-blue-500 text-white text-l m-4   focus:outline-none" id="btn2"
+            >
+              Get Started
+            </button></a>
+          </div>
+
+          <div
+            class="flex flex-col border-2 shadow-md bg-clip-border rounded-xl w-1/4 opacity-25" id="card3"
+          >
+            <h1 class="bg-gray-300 p-4 text-xl mb-2">Enterprise</h1>
+            <span class="text-3xl mb-2"
+              >$29 <span class="text-gray-700">/month</span></span
+            >
+            <h2>30 users included</h2>
+            <h2>15 GB of storage</h2>
+            <h2>Phone and Email support</h2>
+            <h2 class="mb-2">Help center access</h2>
+            <a href="./form.html"><button disabled
+              class="border-2 rounded-lg p-2 bg-blue-500 text-white text-l m-4   focus:outline-none" id="btn3"      
+            >
+              Contact Us
+            </button></a>
+          </div>
+        </div>
+      </div>
+      <footer class="flex justify-center ">
+        <div class="flex gap-2 justify-between border-gray-400 border-t-2 w-3/4 mt-16 px-24 py-8">
+          <div class="pt-4">
+            <span class="bg-purple-700 text-white text-2xl rounded-lg px-2 "
+              >B</span
+            >
+            <p class="mt-4">© 2017-2018</p>
+          </div>
+          <div>
+            <h1 class="text-xl font-bold pb-2">Features</h1>
+            <ul>
+              <li class="hover:underline cursor-pointer text-l text-gray-700">Cool stuff</li>
+              <li class="hover:underline cursor-pointer text-l text-gray-700">Random feature</li>
+              <li class="hover:underline cursor-pointer text-l text-gray-700">Team feature</li>
+              <li class="hover:underline cursor-pointer text-l text-gray-700">Stuff for developers</li>
+              <li class="hover:underline cursor-pointer text-l text-gray-700">Another one</li>
+              <li class="hover:underline cursor-pointer text-l text-gray-700">Last time</li>
+            </ul>
+          </div>
+          <div>
+            <h1 class="text-xl font-bold pb-2">Resources</h1>
+            <ul>
+              <li class="hover:underline cursor-pointer text-l text-gray-700">Resource</li>
+              <li class="hover:underline cursor-pointer text-l text-gray-700">Resource Name</li>
+              <li class="hover:underline cursor-pointer text-l text-gray-700">Another Resource</li>
+              <li class="hover:underline cursor-pointer text-l text-gray-700">Final Resource</li>
+            </ul>
+          </div>
+          <div>
+            <h1 class="text-xl font-bold pb-2">About</h1>
+            <ul>
+              <li class="hover:underline cursor-pointer text-l text-gray-700">Team</li>
+              <li class="hover:underline cursor-pointer text-l text-gray-700">Locations</li>
+              <li class="hover:underline cursor-pointer text-l text-gray-700">Privacy</li>
+              <li class="hover:underline cursor-pointer text-l text-gray-700">Terms</li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+</body>
+<script src="./Features.js"></script>
+</html>
